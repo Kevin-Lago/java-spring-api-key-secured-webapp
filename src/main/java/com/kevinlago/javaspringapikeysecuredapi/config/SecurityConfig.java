@@ -14,9 +14,9 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 public class SecurityConfig {
-    @Value("env.http.api-key.header")
+    @Value("${env.http.security.api-key.header}")
     private String apiKeyHeader;
-    @Value("env.http.api-key.value")
+    @Value("${env.http.security.api-key.value}")
     private String apiKeyValue;
 
     @Bean
